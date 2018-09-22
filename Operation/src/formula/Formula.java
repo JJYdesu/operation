@@ -48,7 +48,7 @@ public class Formula {
     public Formula(Operators operator, int numerator, int denominator){
         this.operator = operator;
         this.integer = numerator / denominator;
-        if(this.integer < 0) { // 整数部分
+        if(numerator * denominator < 0) { // 整数部分
             this.symbol =  -1; // 数值正负
             this.integer = -1 * this.integer; // 正化
         }
@@ -87,7 +87,7 @@ public class Formula {
         numerator = integer * denominator + numerator;
 
         this.integer = numerator / denominator;
-        if(this.integer < 0) { // 整数部分
+        if(numerator * denominator < 0) { // 整数部分
             this.symbol =  -1; // 数值正负
             this.integer = -1 * this.integer; // 正化
         }
@@ -292,21 +292,20 @@ public class Formula {
     }
 
     public Boolean push(Formula x){
-        Operators operator = this.operator; // 记录原来的运算符
-        int integer, denominator, numerator;
+        int integer, denominator, numerator, symbol;
         integer = this.integer;
         denominator = this.denominator;
         numerator = this.numerator;
+        symbol = this.symbol;
 
         this.list.add(x);
         this.injectFormulaValue();
-        if(this.operator != operator){ //
+        if(symbol != this.symbol){ // 结果为负数，失败
             this.list.remove(list.size() - 1);
             this.integer = integer;
             this.denominator = denominator;
             this.numerator = numerator;
-            return false;
-        } else if((this.integer * this.denominator + this.numerator) < 0){
+            this.symbol = symbol;
             return false;
         }
         return true;
