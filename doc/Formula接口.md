@@ -54,3 +54,45 @@ public String print()
 ```
 
 ***
+
+## 4. 向多项式增加一项
+- 接口函数：
+- 成功返回 true
+- 失败返回 false，（计算结果为负数，则失败，不会进行添加）
+```java
+public Boolean push(Formula x)
+```
+例如：
+```java
+Formula a, b, c;
+a = new Formula();
+b = new Formula();
+c = new Formula();
+c.push(a)
+c.push(b)
+```
+等同于：
+```java
+Formula a, b, c;
+a = new Formula();
+b = new Formula();
+
+ArrayList<Formula> list = new ArrayList<Formula>();
+list.add(a)
+list.add(b)
+c = new Formula(Formula.Operators.ADD, list)
+```
+
+***
+
+## 5.获取单项式或多项式的值
+- 创建完成，或 push 成功都可以直接获取`当前`式子的值：
+```java
+formula.integer // 整数部分
+formula.numerator // 分子
+formula.denominator // 分母
+formula.symbol // 正负号
+formula.operator // 运算符
+```
+
+

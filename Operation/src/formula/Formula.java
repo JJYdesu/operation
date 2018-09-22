@@ -119,7 +119,6 @@ public class Formula {
         this.operator = operator;
         this.list = list;
         this.injectFormulaValue();
-        if(this.symbol == -1) return;
     }
 
     /**
@@ -128,7 +127,7 @@ public class Formula {
      */
     public String _print(){
         String str = "";
-        if(list == null) { // 单项式
+        if(list == null || list.size() == 0) { // 单项式
             if(numerator > 0 && denominator > 0) str = numerator + "/" + denominator;
             if(integer > 0) {
                 if(str != "") str = integer + "'" + str;
@@ -172,6 +171,7 @@ public class Formula {
      * @param
      */
     public void injectFormulaValue(){
+        if(list == null) return;
         int length = list.size(),
             start = 0,
             end = 0;
@@ -179,8 +179,8 @@ public class Formula {
 
         // 计算式子值
         Formula a, b, c = null;
-        a = list.get(0);
-        for(int i = 1; i < length; i++){
+        a = new Formula();
+        for(int i = 0; i < length; i++){
             b = list.get(i);
             if(b.operator == Operators.DIV || b.operator == Operators.MUL){
                 a = this.mergeValue(a, b);
@@ -291,7 +291,13 @@ public class Formula {
         return this.symbol == 1;
     }
 
+    /**
+     * 向多项式推入一项
+     * @param x
+     * @return
+     */
     public Boolean push(Formula x){
+        if(this.list == null) this.list = new ArrayList<Formula>();
         int integer, denominator, numerator, symbol;
         integer = this.integer;
         denominator = this.denominator;
@@ -309,18 +315,6 @@ public class Formula {
             return false;
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        Formula a, b, c;
-        ArrayList<Formula> list = new ArrayList<Formula>();
-        a = new Formula(Operators.ADD, 3); // + 3
-        b = new Formula(Operators.ADD, 4, 1, 5); // + 4'1/5
-        list.add(a);
-        list.add(b);
-        c = new Formula(Operators.ADD, list); // 3 + 4'1/5
-        c.print();
-        System.out.println(c.integer+"'"+c.numerator+"/"+c.denominator);
     }
 
     public void calculateFormulaString( ){ } // 读取字符串
