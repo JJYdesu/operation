@@ -27,12 +27,15 @@ public class Test {
 //        System.out.println(f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")");
 
         ArrayList<Formula> list3 = new ArrayList<Formula>();
-        list3.add(c);
-        list3.add(c);
+        list3.add(a);
+        list3.add(a);
+        list3.add(a);
         g = new Formula(Formula.Operators.ADD, list3);
         g.print();
         System.out.println(g.isPositiveNumber());
 //        f.print();
-        System.out.println(g.symbol+ "*("+ g.integer + "'" + g.numerator+"/"+ g.denominator+")");
+        String s = new String();
+        s = g.symbol+ "*("+ g.integer + "'" + g.numerator+"/"+ g.denominator+")";
+        System.out.println(s);
     }
 }
