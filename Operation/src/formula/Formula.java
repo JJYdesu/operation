@@ -141,7 +141,6 @@ public class Formula {
                 Formula item = list.get(i);
                 if(i == 0) { // 首项
                     if(item.operator == Operators.SUB) str += " - ";
-                    str += item._print();
                 }else {
                     switch (item.operator){
                         case SUB: str += " - ";break;
@@ -149,9 +148,9 @@ public class Formula {
                         case MUL: str += " * ";break;
                         case DIV: str += " ÷ ";break;
                     }
-                    if(item.list != null && item.list.size() > 1) str += '('+ item._print() +')';
-                    else str += item._print();
                 }
+                if(item.list != null && item.list.size() > 1) str += '('+ item._print() +')';
+                else str += item._print();
             }
         }
         return str;
