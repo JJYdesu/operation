@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e8e536-0931-41f7-b833-50b790658877" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/ruangong2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Operation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Operation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Operation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Operation/formula/Create.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Operation/formula/Create.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Operation/formula/CreateFormula.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Operation/formula/CreateNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Operation/formula/CreateOperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Operation/formula/Formula$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Operation/formula/Formula$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Operation/formula/Formula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Operation/formula/Formula.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Operation/formula/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formula/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/formula/Create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formula/CreateFormula.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formula/CreateNum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formula/CreateOperator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formula/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formula/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/formula/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,12 +15,13 @@
     <session id="1116263902">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -101,16 +82,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/formula/Formula.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1265">
+            <state relative-caret-position="988">
               <caret line="120" selection-start-line="120" selection-end-line="120" />
               <folding>
                 <element signature="method#Formula#1;class#Formula#0" />
                 <element signature="method#Formula#2;class#Formula#0" />
                 <element signature="method#Formula#3;class#Formula#0" />
                 <element signature="method#_print#0;class#Formula#0" />
+                <element signature="method#injectFormulaValue#0;class#Formula#0" />
               </folding>
             </state>
           </provider>
@@ -119,39 +101,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/formula/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
+            <state relative-caret-position="570">
               <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/formula/Create.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1909">
-              <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+            <state relative-caret-position="364">
+              <caret line="116" column="34" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#CreateOtherOperand#0;class#Create#0" />
+                <element signature="e#158#167#0" expanded="true" />
+                <element signature="method#CreateFirstOperand#0;class#Create#0" />
+                <element signature="method#CreateFormula#0;class#Create#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../test/src/CreatOperator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../参考/Operation/src/formula/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -185,11 +150,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -202,29 +167,25 @@
           <expand>
             <path>
               <item name="Operation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="软件工程第二次" type="462c0819:PsiDirectoryNode" />
+              <item name="ruangong2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Operation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="软件工程第二次" type="462c0819:PsiDirectoryNode" />
+              <item name="ruangong2" type="462c0819:PsiDirectoryNode" />
               <item name="Operation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Operation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="软件工程第二次" type="462c0819:PsiDirectoryNode" />
+              <item name="ruangong2" type="462c0819:PsiDirectoryNode" />
               <item name="Operation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Operation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="软件工程第二次" type="462c0819:PsiDirectoryNode" />
+              <item name="ruangong2" type="462c0819:PsiDirectoryNode" />
               <item name="Operation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="formula" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Operation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -235,7 +196,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537692178955" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537699334170" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -325,9 +286,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1427614" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -336,7 +297,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39574468" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2844734" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -369,59 +330,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/formula/CreateFormula.java" />
-    <entry file="file://$PROJECT_DIR$/../../新建文件夹/Create.java">
+    <entry file="file://$PROJECT_DIR$/../../新建文件夹/Create.java" />
+    <entry file="file://$PROJECT_DIR$/../../新建文件夹/Operation/src/formula/Formula.java" />
+    <entry file="file://$PROJECT_DIR$/../../test/src/CreatOperator.java" />
+    <entry file="file://$PROJECT_DIR$/../../参考/Operation/src/formula/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/formula/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345" />
+        <state relative-caret-position="570">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../新建文件夹/Operation/src/formula/Formula.java">
+    <entry file="file://$PROJECT_DIR$/src/formula/Create.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="313" column="44" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
+        <state relative-caret-position="364">
+          <caret line="116" column="34" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="34" />
+          <folding>
+            <element signature="e#158#167#0" expanded="true" />
+            <element signature="method#CreateFirstOperand#0;class#Create#0" />
+            <element signature="method#CreateFormula#0;class#Create#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/formula/Formula.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
+        <state relative-caret-position="988">
           <caret line="120" selection-start-line="120" selection-end-line="120" />
           <folding>
             <element signature="method#Formula#1;class#Formula#0" />
             <element signature="method#Formula#2;class#Formula#0" />
             <element signature="method#Formula#3;class#Formula#0" />
             <element signature="method#_print#0;class#Formula#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/formula/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../test/src/CreatOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../参考/Operation/src/formula/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/formula/Create.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1909">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CreateOtherOperand#0;class#Create#0" />
+            <element signature="method#injectFormulaValue#0;class#Formula#0" />
           </folding>
         </state>
       </provider>
