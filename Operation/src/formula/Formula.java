@@ -316,7 +316,7 @@ public class Formula {
             return false;
         }
         return true;
-    }
+    } 
 
     /**
      * 输出算式运算结果字符串
