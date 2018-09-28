@@ -17,9 +17,17 @@ public class Formula {
     public ArrayList<Formula> list; // 多项式
 
     /**
-     * 初始化单项式
+     * 初始化空单项式
      */
     public Formula() {
+        list = null;
+    }
+
+    /**
+     * 初始化单项式
+     */
+    public Formula(Operators operator) {
+        this.operator = operator;
         list = null;
     }
 
