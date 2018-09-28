@@ -7,33 +7,26 @@ public class Create {
         ArrayList<Formula> list = new ArrayList<Formula>();
         Formula e;
 
-        //生成式子中的第一个操作数（符号只能是+或-）
+        //生成式子中的第一个操作数（符号只能是+）
         public Formula CreateFirstOperand(int n){
-            int a = r.nextInt(n)+1; //随机产生1-m中的一个操作数
+            int a = r.nextInt(n) + 1; //随机产生1-n中的一个操作数
             int g = r.nextInt(n) + 1;
             int h = r.nextInt(n) + 1;
             int b = r.nextInt(2);
-            int d = r.nextInt(2);
             if (b==0){
-                switch (d){
-                    case 0:e = new Formula(Formula.Operators.ADD, a);break;
-                    case 1:e = new Formula(Formula.Operators.SUB, a);break;
-                }
+                e = new Formula(Formula.Operators.ADD, a);
             }
             else {
-                switch (d){
-                    case 0:e = new Formula(Formula.Operators.ADD, a, g, h);break;
-                    case 1:e = new Formula(Formula.Operators.SUB, a, g, h);break;
-                }
+                e = new Formula(Formula.Operators.ADD, a, g, h);
             }
             return e;
         }
 
         //生成式子中其他的操作数，可以为+,-,*,/
         public Formula CreateOtherOperand(int n){
-            int a = r.nextInt(n)+1; //随机产生1-n中的一个操作数
-            int g = r.nextInt(n)+1;
-            int h = r.nextInt(n)+1;
+            int a = r.nextInt(n) + 1; //随机产生1-n中的一个操作数
+            int g = r.nextInt(n) + 1;
+            int h = r.nextInt(n) + 1;
             int b = r.nextInt(2);
             int c = r.nextInt(4);
             if(b==0){

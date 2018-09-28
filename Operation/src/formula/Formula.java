@@ -149,7 +149,8 @@ public class Formula {
                         case MUL: str += " * ";break;
                         case DIV: str += " ÷ ";break;
                     }
-                    str += item._print();
+                    if(item.list != null && item.list.size() > 1) str += '('+ item._print() +')';
+                    else str += item._print();
                 }
             }
         }
@@ -315,6 +316,21 @@ public class Formula {
             return false;
         }
         return true;
+    } 
+
+    /**
+     * 输出算式运算结果字符串
+     * @return
+     */
+    public String output(){
+        String str = "";
+        if(this.symbol == -1) str += "-";
+        if(this.integer != 0) str += this.integer;
+        if(this.denominator != 0 && this.numerator != 0) {
+            if(this.integer != 0) str += "'" + this.numerator + "/" + this.denominator;
+            else str += this.numerator + "/" + this.denominator;
+        }
+        return str;
     }
 
     public void calculateFormulaString( ){ } // 读取字符串

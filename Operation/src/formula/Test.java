@@ -13,7 +13,7 @@ public class Test {
         c = new Formula(Formula.Operators.SUB, 8, 6);
         d = new Formula(Formula.Operators.DIV, 6, 1, 3);
 
-        list.add(b);
+       /* list.add(b);
         list.add(c);
         e = new Formula(Formula.Operators.ADD, list);
 //        e.print();
@@ -24,18 +24,22 @@ public class Test {
         list2.add(d);
         f = new Formula(Formula.Operators.ADD, list2);
 //        f.print();
-//        System.out.println(f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")");
+//        System.out.println(f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")");*/
 
         ArrayList<Formula> list3 = new ArrayList<Formula>();
         list3.add(a);
-        list3.add(a);
-        list3.add(a);
+        list3.add(b);
         g = new Formula(Formula.Operators.ADD, list3);
-        g.print();
-        System.out.println(g.isPositiveNumber());
-//        f.print();
-        String s = new String();
-        s = g.symbol+ "*("+ g.integer + "'" + g.numerator+"/"+ g.denominator+")";
-        System.out.println(s);
+        ArrayList<Formula> list4 = new ArrayList<Formula>();
+        list4.add(c);
+        list4.add(g);
+        list4.add(d);
+        f = new Formula(Formula.Operators.ADD, list4);
+        f.print();
+        System.out.println(f.output());
+//        f.print();*/
+//        String s ;
+//        s = f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")";
+//        System.out.println(s);
     }
 }
