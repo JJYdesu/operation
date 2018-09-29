@@ -71,8 +71,7 @@ public class Create {
                     case 0:
                         i.push(first);
                         i.push(second);
-                        i.print();
-                        s = i.output();
+                        s = i._print();
                         break;
 
                         //三个操作数
@@ -80,8 +79,7 @@ public class Create {
                             i.push(first);
                             i.push(second);
                             i.push(third);
-                            i.print();
-                            s = i.output();
+                            s = i._print();
                         break;
 
                         //四个操作数
@@ -93,8 +91,7 @@ public class Create {
                                      i.push(second);
                                      i.push(third);
                                      i.push(fourth);
-                                     i.print();
-                                     s = i.output();
+                                     s = i._print();
                                  break;
                                  case 1:
                                      int b = r.nextInt(2);
@@ -105,8 +102,7 @@ public class Create {
                                              i.push(third);
                                              j.push(i);
                                              j.push(fourth);
-                                             j.print();
-                                             s = j.output();
+                                             s = j._print();
                                          break;
                                          case 1:                //a+(b+c+d)
                                               int c = r.nextInt(3);
@@ -120,8 +116,7 @@ public class Create {
                                               j.push(second);
                                               j.push(third);
                                               i.push(j);
-                                              i.print();
-                                              s = i.output();
+                                              s = i._print();
                                               break;
                                  }
                                  break;
@@ -141,8 +136,7 @@ public class Create {
                                               j.push(i);
                                               j.push(third);
                                               j.push(fourth);
-                                              j.print();
-                                              s = j.output();
+                                              s = j._print();
                                               break;
                                               case 1:              //a+(b+c)+d
                                                   i.push(first);
@@ -150,8 +144,7 @@ public class Create {
                                                   j.push(second);
                                                   i.push(j);
                                                   i.push(third);
-                                                  i.print();
-                                                  s = i.output();
+                                                  s = i._print();
                                                   break;
                                                    case 2:               //a+b+(c+d)
                                                        i.push(first);
@@ -159,8 +152,7 @@ public class Create {
                                                        j.push(first2);
                                                        j.push(third);
                                                        i.push(j);
-                                                       i.print();
-                                                       s = i.output();
+                                                       s = i._print();
                                                        break;
                                  }
                                  break;
@@ -177,8 +169,7 @@ public class Create {
                                              j.push(third);
                                              l.push(i);
                                              l.push(j);
-                                             l.print();
-                                             s = l.output();
+                                             s = l._print();
                                              break;
 
                             }
@@ -188,35 +179,6 @@ public class Create {
                 return s;
 
         }
-
-
-
-    public static void main(String[] args) {
-        Create n = new Create();
-        int i, a, r,m;
-        String[] t = new String[10001];
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("请输入数字的范围:");
-        a = sc.nextInt();
-
-        System.out.println("请输入要生成的题目数量:");
-        i = sc.nextInt();
-        for (m = 1; m <= i; m++) {
-            System.out.print(m + "、");
-            t[m] = n.CreateFormula(a);
-        }
-
-        System.out.println("显示答案请输入1");
-        r = sc.nextInt();
-        if (r == 1) {
-            for (m = 1; m <= i; m++) {
-                System.out.print(m + "、");
-                System.out.println(t[m]);
-            }
-
-        }
-    }
 }
 
 

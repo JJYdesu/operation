@@ -12,7 +12,7 @@ public class Test {
         b = new Formula(Formula.Operators.ADD, 4, 1, 2); // 4'1/2
         c = new Formula(Formula.Operators.SUB, 8, 6); // -8/6
         d = new Formula(Formula.Operators.DIV, 6, 1, 3); // 除 6'1/3
-
+        String s;
        /* list.add(b);
         list.add(c);
         e = new Formula(Formula.Operators.ADD, list);
@@ -42,12 +42,17 @@ public class Test {
 //        s = f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")";
 //        System.out.println(s);
 
-//        f = new Formula();
-//        g = new Formula(Formula.Operators.SUB);
-//        h = new Formula();
-//      f.push(a);
-//      f.push(b);
-//      f.push(d);
+        f = new Formula();
+        g = new Formula(Formula.Operators.SUB);
+        h = new Formula();
+        f.push(a);
+        f.push(b);
+        f.push(d);
+        s = f._print();
+        System.out.println(s);
+        e = Formula.calculateFormulaString(s);
+        System.out.println(e.output());
+
 
 
 
@@ -63,13 +68,13 @@ public class Test {
 //        f = Formula.calculateFormulaString("10'4/5 ÷ 3");
 //        f = Formula.calculateFormulaString("(7'8/9 * 6) + (10'1/7 ÷ 6'1/2)");
 //        f = Formula.calculateFormulaString("6'2/3 * 1'1/2 ÷ 3");
-        f = Formula.calculateFormulaString("5'4/7 ÷ 8'5/6");
+//        f = Formula.calculateFormulaString("5'4/7 ÷ 8'5/6");
 //        f = Formula.calculateFormulaString("10'2/3 + 4 + 3"+);
 //        f = Formula.calculateFormulaString("1 ÷ 1 * 2'1/3 ÷ 7");
 //        f = Formula.calculateFormulaString("6 * 5 + 8 + 3");
 //        f = Formula.calculateFormulaString("7 * 5'1/2");
 //        System.out.println(f.numerator);
 //        f.print();
-        System.out.println(f.output());
+//        System.out.println(f.output());
     }
 }
