@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args) {
-        Formula a, b, c, d, e, f, g;
+        Formula a, b, c, d, e, f, g,h;
         ArrayList<Formula> list = new ArrayList<Formula>();
 
         a = new Formula(Formula.Operators.ADD, 3); // 3
@@ -42,19 +42,20 @@ public class Test {
 //        s = f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")";
 //        System.out.println(s);
 
-//        f = new Formula();
-//        f.push(a);
-//        f.push(b);
-//        e = new Formula(Formula.Operators.DIV);
-//        e.push(a);
-//        e.push(b);
-//        g = new Formula();
-//        g.push(f);
-//        g.push(e); // g = f ÷ e
-//
-//        g.print();
-//        String s = g.output();
-//        System.out.println(s);
+        f = new Formula();
+        g = new Formula(Formula.Operators.SUB);
+        h = new Formula();
+      f.push(a);
+      f.push(b);
+      f.push(d);
+
+
+
+
+
+
+
+        f.print();
 
 //        f = Formula.calculateFormulaString("1 + 1/2");
 //        f = Formula.calculateFormulaString("(1 + 1/2)*4");
