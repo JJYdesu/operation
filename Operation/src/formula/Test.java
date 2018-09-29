@@ -42,16 +42,25 @@ public class Test {
 //        s = f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")";
 //        System.out.println(s);
 
-        f = new Formula();
-        f.push(a);
-        f.push(b);
-        f.push(c);
-        e = new Formula();
-        e.push(f);
-        e.push(d);
-        e.print();
-        String s = e.output();
-        System.out.println(s);
+//        f = new Formula();
+//        f.push(a);
+//        f.push(b);
+//        e = new Formula(Formula.Operators.DIV);
+//        e.push(a);
+//        e.push(b);
+//        g = new Formula();
+//        g.push(f);
+//        g.push(e); // g = f ÷ e
+//
+//        g.print();
+//        String s = g.output();
+//        System.out.println(s);
 
+//        f = Formula.calculateFormulaString("1 + 1/2");
+//        f = Formula.calculateFormulaString("(1 + 1/2)*4");
+        f = Formula.calculateFormulaString("(4 - 2'1/5) * (1 + 1/2)");
+//        System.out.println(f.numerator);
+//        f.print();
+        System.out.println(f.output());
     }
 }
