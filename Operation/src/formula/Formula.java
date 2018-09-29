@@ -359,7 +359,7 @@ public class Formula {
 
         Operators operator = Operators.ADD;
         while (++i < length){
-            System.out.println(i + " | " + length);
+//            System.out.println(i + " | " + length);
             c = formula.charAt(i);
             if(c == ' ') continue;
             else if(c == '('){
@@ -408,7 +408,7 @@ public class Formula {
                 break;
             }
         }
-        System.out.println("> "+formula);
+//        System.out.println("> "+formula);
         if(isOk){
             target2 = stack.get(0);
             target2.push(target);
