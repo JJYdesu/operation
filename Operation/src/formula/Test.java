@@ -42,12 +42,12 @@ public class Test {
 //        s = f.symbol+ "*("+ f.integer + "'" + f.numerator+"/"+ f.denominator+")";
 //        System.out.println(s);
 
-        f = new Formula();
-        g = new Formula(Formula.Operators.SUB);
-        h = new Formula();
-      f.push(a);
-      f.push(b);
-      f.push(d);
+//        f = new Formula();
+//        g = new Formula(Formula.Operators.SUB);
+//        h = new Formula();
+//      f.push(a);
+//      f.push(b);
+//      f.push(d);
 
 
 
@@ -55,11 +55,19 @@ public class Test {
 
 
 
-        f.print();
+//        f.print();
 
 //        f = Formula.calculateFormulaString("1 + 1/2");
 //        f = Formula.calculateFormulaString("(1 + 1/2)*4");
-        f = Formula.calculateFormulaString("(4 - 2'1/5) * (1 + 1/2)");
+//        f = Formula.calculateFormulaString("(4'1/2 ÷ 8'2/3) + (10 ÷ 7'2/7)");
+//        f = Formula.calculateFormulaString("10'4/5 ÷ 3");
+//        f = Formula.calculateFormulaString("(7'8/9 * 6) + (10'1/7 ÷ 6'1/2)");
+//        f = Formula.calculateFormulaString("6'2/3 * 1'1/2 ÷ 3");
+        f = Formula.calculateFormulaString("5'4/7 ÷ 8'5/6");
+//        f = Formula.calculateFormulaString("10'2/3 + 4 + 3"+);
+//        f = Formula.calculateFormulaString("1 ÷ 1 * 2'1/3 ÷ 7");
+//        f = Formula.calculateFormulaString("6 * 5 + 8 + 3");
+//        f = Formula.calculateFormulaString("7 * 5'1/2");
 //        System.out.println(f.numerator);
 //        f.print();
         System.out.println(f.output());
