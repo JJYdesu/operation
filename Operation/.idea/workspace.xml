@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="e5e8e536-0931-41f7-b833-50b790658877" name="Default Changelist" comment="" />
-=======
     <list default="true" id="e5e8e536-0931-41f7-b833-50b790658877" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/formula/Formula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/formula/Formula.java" afterDir="false" />
     </list>
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,13 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/formula/Formula.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="264">
-              <caret line="327" column="25" lean-forward="true" selection-start-line="327" selection-start-column="25" selection-end-line="327" selection-end-column="25" />
-=======
             <state relative-caret-position="397">
               <caret line="412" column="35" lean-forward="true" selection-start-line="412" selection-start-column="35" selection-end-line="412" selection-end-column="35" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
               <folding>
                 <element signature="method#Formula#1;class#Formula#0" />
                 <element signature="method#Formula#2;class#Formula#0" />
@@ -137,13 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/formula/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="113">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-=======
             <state relative-caret-position="367">
               <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
               <folding>
                 <element signature="e#199#208#0" expanded="true" />
               </folding>
@@ -154,28 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/formula/Create.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="-1257">
-              <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/formula/Test2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-=======
             <state relative-caret-position="418">
               <caret line="206" column="38" lean-forward="true" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
             </state>
           </provider>
         </entry>
@@ -211,17 +177,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
-=======
     <option name="x" value="878" />
     <option name="y" value="110" />
     <option name="width" value="917" />
     <option name="height" value="932" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -250,11 +209,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538103256680" />
-=======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538219993281" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -359,12 +314,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-=======
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12579957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -375,11 +326,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30921987" />
-=======
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23778501" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -440,51 +387,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/formula/CreateFormula.java" />
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/../../新建文件夹/Create.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../新建文件夹/Operation/src/formula/Formula.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="313" column="44" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../test/src/CreatOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../参考/Operation/src/formula/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/formula/Test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/formula/Create.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1257">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-=======
     <entry file="file://E:/新建文件夹/Create.java" />
     <entry file="file://E:/新建文件夹/Operation/src/formula/Formula.java" />
     <entry file="file://E:/test/src/CreatOperator.java" />
@@ -494,53 +396,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="206" column="38" lean-forward="true" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/formula/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="113">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#1164#1173#0" expanded="true" />
-=======
         <state relative-caret-position="367">
           <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
           <folding>
             <element signature="e#199#208#0" expanded="true" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/formula/Formula.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="264">
-          <caret line="327" column="25" lean-forward="true" selection-start-line="327" selection-start-column="25" selection-end-line="327" selection-end-column="25" />
-=======
         <state relative-caret-position="397">
           <caret line="412" column="35" lean-forward="true" selection-start-line="412" selection-start-column="35" selection-end-line="412" selection-end-column="35" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
           <folding>
             <element signature="method#Formula#1;class#Formula#0" />
             <element signature="method#Formula#2;class#Formula#0" />
             <element signature="method#Formula#3;class#Formula#0" />
-<<<<<<< HEAD
-            <element signature="method#Formula#4;class#Formula#0" />
-            <element signature="method#_print#0;class#Formula#0" />
-            <element signature="method#injectFormulaValue#0;class#Formula#0" />
-            <element signature="method#mergeValue#0;class#Formula#0" />
-            <element signature="method#_add#0;class#Formula#0" />
-            <element signature="method#_sub#0;class#Formula#0" />
-            <element signature="method#_div#0;class#Formula#0" />
-            <element signature="method#_mul#0;class#Formula#0" />
-            <element signature="method#push#0;class#Formula#0" />
-=======
             <element signature="e#9770#9779#0" expanded="true" />
->>>>>>> 386129281d15158381a794756f82c281e3a04f87
           </folding>
         </state>
       </provider>
