@@ -17,9 +17,17 @@ public class Formula {
     public ArrayList<Formula> list; // 多项式
 
     /**
-     * 初始化单项式
+     * 初始化空单项式
      */
     public Formula() {
+        list = null;
+    }
+
+    /**
+     * 初始化单项式
+     */
+    public Formula(Operators operator) {
+        this.operator = operator;
         list = null;
     }
 
@@ -141,7 +149,6 @@ public class Formula {
                 Formula item = list.get(i);
                 if(i == 0) { // 首项
                     if(item.operator == Operators.SUB) str += " - ";
-                    str += item._print();
                 }else {
                     switch (item.operator){
                         case SUB: str += " - ";break;
@@ -149,9 +156,10 @@ public class Formula {
                         case MUL: str += " * ";break;
                         case DIV: str += " ÷ ";break;
                     }
-                    if(item.list != null && item.list.size() > 1) str += '('+ item._print() +')';
-                    else str += item._print();
                 }
+
+                if(item.list != null && item.list.size() > 1) str += '('+ item._print() +')';
+                else str += item._print();
             }
         }
         return str;
@@ -273,14 +281,13 @@ public class Formula {
      * @return
      */
     public Formula _mul(Formula x, Formula y){
-        int integer, numerator, denominator, operatorX, operatorY, numeratorX, numeratorY, oper;
+        int numerator, denominator, numeratorX, numeratorY;
         Operators operator;
 
         numeratorX = (x.integer * x.denominator + x.numerator) * x.symbol;
         numeratorY = (y.integer * y.denominator + y.numerator) * y.symbol;
         numerator = numeratorX * numeratorY;
         denominator = x.denominator * y.denominator;
-
         return new Formula(x.operator, numerator, denominator);
     }
 
@@ -330,9 +337,86 @@ public class Formula {
             if(this.integer != 0) str += "'" + this.numerator + "/" + this.denominator;
             else str += this.numerator + "/" + this.denominator;
         }
+        if(this.integer == 0 && this.numerator == 0) str = "0";
         return str;
     }
 
-    public void calculateFormulaString( ){ } // 读取字符串
+    /**
+     * 读取字符串
+     * @param formula
+     * @return
+     */
+    public static Formula calculateFormulaString(String formula){
+        if(formula == null) return new Formula();
+
+        ArrayList<Formula> stack = new ArrayList<Formula>();
+        stack.add(new Formula());
+
+        Formula target = new Formula(), target2;
+        int length = formula.length(), i = -1, position = 1;
+        char c;
+        Boolean isOk = true;
+
+        Operators operator = Operators.ADD;
+        while (++i < length){
+//            System.out.println(i + " | " + length);
+            c = formula.charAt(i);
+            if(c == ' ') continue;
+            else if(c == '('){
+                stack.add(target);
+                target = new Formula();
+            } else if(c == ')'){
+                int index = stack.size() - 1;
+                target2 = stack.remove(index);
+                target2.push(target);
+                target = target2;
+                position = 1;
+            } else if(c == '+' || c == '-' || c == '*' || c == '÷') {
+                stack.get(stack.size() - 1).push(target);
+                switch (c){
+                    case '+': operator = Operators.ADD; break;
+                    case '-': operator = Operators.SUB; break;
+                    case '*': operator = Operators.MUL; break;
+                    case '÷': operator = Operators.DIV; break;
+                }
+                target = new Formula(operator);
+                operator = Operators.ADD;
+                position = 1;
+            }else if(c == '\''){
+                position = 2;
+            }else if(c == '/'){
+                if(position == 1){
+                    target.numerator = target.integer;
+                    target.integer = 0;
+                }
+                position = 3;
+                target.denominator = 0;
+            }
+            else if(c <= '9' && c >= '0'){
+                int value = Integer.parseInt(c + "");
+                if(position == 1){
+                    target.integer = target.integer * 10 + value;
+                }else if(position == 2) {
+                    target.numerator = target.numerator * 10 + value;
+                }else if(position == 3) {
+                    target.denominator = target.denominator * 10 + value;
+                }
+            }else if(c == '=') break;
+            else {
+                System.out.println("- " + "未识别符号("+ (i+1) +")："+ c);
+                isOk = false;
+                break;
+            }
+        }
+//        System.out.println("> "+formula);
+        if(isOk){
+            target2 = stack.get(0);
+            target2.push(target);
+            return stack.remove(0);
+        }else {
+            return new Formula();
+        }
+
+    }
 
 }
